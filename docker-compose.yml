@@ -138,7 +138,7 @@ services:
             args:
                 MLFLOW_ARTIFACT_ROOT: ${MLFLOW_ARTIFACT_ROOT}
                 # for amd64 (x86_64) please leave ARCH_TRAILING_IMG_NAME empty
-                ARCH_TRAILING_IMG_NAME: " "
+                ARCH_TRAILING_IMG_NAME: ""
         shm_size: '2gb'
         # NOTE: if you change RAY_METRICS_EXPORT_PORT in .env,
         # you need to change the port in prometheus.yaml too
@@ -290,8 +290,11 @@ services:
         pid: host
         networks:
             - backend-network
-        volumes:
-            - /:/host:ro,rslave
+        # volumes:                                              -- Chanchal's Comment (Original Command)
+        #     - /:/host:ro,rslave
+        volumes:                                                # -- AI's answer, so for future it couls be changes if needed
+        - /proc:/host/proc:ro
+        - /sys:/host/sys:r
         command: "--path.rootfs=/host"
 
     # cadvisor
