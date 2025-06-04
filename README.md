@@ -1,4 +1,4 @@
-<h1 align="center"> Sales Forecast MLOps at Scale </h1>
+<h1 align="center"> Sales Forecast Using DevOps </h1>
 
 <p align="center"><b> ▶️ Highly scalable Cloud-native Machine Learning system ◀️ </b></p>
 
@@ -19,7 +19,7 @@
 
 
 # Overview
-**"Sales Forecast MLOps at Scale"** delivers a full-stack, production-ready solution designed to streamline the entire sales forecasting system – from development and deployment to continuous improvement. It offers flexible deployment options, supporting both on-premises environments (Docker Compose, Kubernetes) and cloud-based setups (Kubernetes, Helm), ensuring adaptability to your infrastructure.
+**"Sales Forecast Using DevOps"** delivers a full-stack, production-ready solution designed to streamline the entire sales forecasting system – from development and deployment to continuous improvement. It offers flexible deployment options, supporting both on-premises environments (Docker Compose, Kubernetes) and cloud-based setups (Kubernetes, Helm), ensuring adaptability to your infrastructure.
 
 
 <image src="./files/sfmlops_software_diagram.png">
